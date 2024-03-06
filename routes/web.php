@@ -20,6 +20,10 @@ Route::get('/', function () {
 
 Route::get('/products', [ProductController::class,'index']);
 
+Route::get('/products/detail', function () {
+    return view('detail');
+});
+
 Route::get('/formulario', function () {
     echo "Hola estamos en formulario";
 });
